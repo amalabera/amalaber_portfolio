@@ -74,30 +74,35 @@ h2.section-title {
 }
 
 /* === Experience Section === */
+/* Image size fix for Experience and Skills */
+.experience img,
+.skills img {
+  max-width: 180px;
+  height: auto;
+  object-fit: contain;
+  margin: 10px auto;
+  display: block;
+}
+
+/* Flexbox layout for Experience cards */
 .experience-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-}
-
-.experience-card {
-  background: #1c1c1c;
   padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 255, 224, 0.2);
 }
 
-.experience-card img {
-  width: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  margin-bottom: 15px;
+/* Flexbox layout for Skills icons */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  align-items: center;
 }
 
-.experience-card h3 {
-  margin: 10px 0 5px;
-  font-size: 1.2rem;
-}
 
 /* === Projects Section === */
 .project-grid {
