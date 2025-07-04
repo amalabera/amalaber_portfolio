@@ -10,48 +10,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #0e0e0e;
   color: white;
-}
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #0e0e0e;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  border-bottom: 1px solid #222;
-}
-
-.logo {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: white;
-}
-.logo span {
-  color: #d9ff00;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-.nav-links li a {
-  color: white;
-  font-size: 1rem;
-  padding: 8px 16px;
-  border-radius: 20px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  border: 1px solid transparent;
-}
-.nav-links li a:hover,
-.nav-links li a.active {
-  background-color: #d9ff00;
-  color: #000;
-  border: 1px solid #d9ff00;
 }
 
 section {
