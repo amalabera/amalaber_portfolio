@@ -344,40 +344,37 @@ footer {
 }
 
 /* Animations */
-.fade-in {
+.timeline-item {
   opacity: 0;
   transform: translateY(30px);
-  animation: fadeInUp 1s ease forwards;
-  animation-delay: 0.2s;
+  animation: slideInUp 1s ease forwards;
 }
 
-@keyframes fadeInUp {
+.timeline-item:nth-child(1) { animation-delay: 0.2s; }
+.timeline-item:nth-child(2) { animation-delay: 0.4s; }
+.timeline-item:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes slideInUp {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
+
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem;
-     margin-bottom: 0.3rem;
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .hero-content p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  .hero {
-  background: linear-gradient(135deg, #142536, #1c3045);
-}
-
-  .project-card h3 {
-    font-size: 1.1rem;
+  .company-logo {
+    margin-bottom: 10px;
   }
 
-  .floating-buttons a {
-    font-size: 12px;
+  .timeline-content ul {
+    text-align: left;
   }
 }
