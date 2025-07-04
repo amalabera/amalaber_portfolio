@@ -4,17 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Amala Bera Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-  <link rel="icon" href="images/favicon.png">
-  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-  <!-- Header -->
   <header class="header">
-    <h1 class="logo">Amala<span class="highlight"> Bera</span></h1>
+    <h1 class="logo">Amala <span class="highlight">Bera</span></h1>
     <nav>
       <a href="#home">Home</a>
       <a href="#projects">Projects</a>
@@ -24,129 +19,53 @@
     </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="hero" id="home">
-    <div class="hero-content" data-aos="fade-up">
-      <img src="images/amala_hero.png" alt="Amala Bera" class="hero-image" />
-      <div class="hero-text">
-        <h2>Hi, I'm <span class="highlight">Amala Bera</span></h2>
-        <p>Business Data Analyst | Python | BI Tools | AI Projects</p>
-        <div class="cta-buttons">
-          <a href="mailto:beraamala43@gmail.com" class="cta-btn">Say Hi →</a>
-          <a href="resume.pdf" class="cta-btn">Resume</a>
-        </div>
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Hello, I'm <span class="highlight">Amala Bera</span><br>Business Data Analyst</h2>
+      <div class="cta-buttons">
+        <a href="mailto:beraamala43@gmail.com" class="cta-btn">Say Hii →</a>
+        <a href="resume.pdf" class="cta-btn">Resume</a>
       </div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section class="projects" id="projects">
-    <h3 class="section-title" data-aos="fade-down">Projects</h3>
-    <div class="project-grid">
-      <div class="project-card" data-aos="fade-up">
-        <img src="images/projects/student-marks.png" alt="Student Marks Predictor">
-        <div class="project-content">
-          <h4>Student Marks Predictor</h4>
-          <p>Built a regression model to predict academic performance based on attendance, study time, and previous grades.</p>
-          <div class="project-links">
-            <a href="https://marks-predictor.streamlit.app" target="_blank">Live Demo</a>
-            <a href="https://github.com/amalabera/student-marks-predictor" target="_blank">Code</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card" data-aos="fade-up">
-        <img src="images/projects/kpi-dashboard.png" alt="Executive KPI Dashboard">
-        <div class="project-content">
-          <h4>Executive KPI Dashboard</h4>
-          <p>Streamlit dashboard using MySQL and Excel to visualize KPIs and automate weekly reporting.</p>
-          <div class="project-links">
-            <a href="https://kpi-dashboard.vercel.app" target="_blank">Live Demo</a>
-            <a href="https://github.com/amalabera/kpi-dashboard" target="_blank">Code</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card" data-aos="fade-up">
-        <img src="images/projects/food-blog.png" alt="Amala Food Blog">
-        <div class="project-content">
-          <h4>Amala Food Blog</h4>
-          <p>Responsive food blog website built with custom animations and clean layout to share personal culinary stories.</p>
-          <div class="project-links">
-            <a href="https://amalafoodblog.ccbp.tech" target="_blank">Live Demo</a>
-            <a href="https://github.com/amalabera/amalafoodblog" target="_blank">Code</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section class="skills" id="skills">
-    <h3 class="section-title" data-aos="fade-down">Skills</h3>
+  <section id="skills" class="skills">
+    <h3 class="section-title">My Skills</h3>
     <div class="skills-grid">
-      <div class="skill" data-aos="zoom-in"><img src="images/skills/python.png" alt=""><p>Python</p></div>
-      <div class="skill" data-aos="zoom-in"><img src="images/skills/mysql.png" alt=""><p>MySQL</p></div>
-      <div class="skill" data-aos="zoom-in"><img src="images/skills/pandas.png" alt=""><p>Pandas</p></div>
-      <div class="skill" data-aos="zoom-in"><img src="images/skills/numpy.png" alt=""><p>NumPy</p></div>
-      <div class="skill" data-aos="zoom-in"><img src="images/skills/tableau.png" alt=""><p>Tableau</p></div>
-      <div class="skill" data-aos="zoom-in"><img src="images/skills/powerbi.png" alt=""><p>Power BI</p></div>
-      <div class="skill" data-aos="zoom-in"><img src="images/skills/excel.png" alt=""><p>Excel</p></div>
-      <div class="skill" data-aos="zoom-in"><img src="images/skills/ml.png" alt=""><p>ML</p></div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section class="experience" id="experience">
-    <h3 class="section-title" data-aos="fade-down">Experience</h3>
-    <div class="experience-grid">
-      <div class="experience-card" data-aos="fade-right">
-        <img src="images/experience/businessanalyst.png" alt="">
-        <h4>Business Data Analyst – Accenture</h4>
-        <p>Nov 2021 – Dec 2023</p>
-        <ul>
-          <li>Created dashboards in Tableau & Python.</li>
-          <li>Led QA for performance analytics tools.</li>
-        </ul>
+      <div class="skill">
+        <img src="images/skills/python.png" alt="Python" />
+        <p>Python</p>
       </div>
-      <div class="experience-card" data-aos="fade-left">
-        <img src="images/experience/qualityanalyst.png" alt="">
-        <h4>Quality Analyst – Accenture</h4>
-        <p>Mar 2021 – Nov 2021</p>
-        <ul>
-          <li>Tested mobile apps & reduced bug reports.</li>
-          <li>Used JIRA and Excel for testing cycles.</li>
-        </ul>
+      <div class="skill">
+        <img src="images/skills/numpy.png" alt="NumPy" />
+        <p>NumPy</p>
       </div>
-      <div class="experience-card" data-aos="fade-up">
-        <img src="images/experience/googleads.png" alt="">
-        <h4>Digital Marketing Analyst – Google Ads</h4>
-        <p>Internship | 2020 – 2021</p>
-        <ul>
-          <li>Managed paid campaigns & analytics.</li>
-          <li>Improved campaign CTR by 22%.</li>
-        </ul>
+      <div class="skill">
+        <img src="images/skills/pandas.png" alt="Pandas" />
+        <p>Pandas</p>
+      </div>
+      <div class="skill">
+        <img src="images/skills/ml.png" alt="Machine Learning" />
+        <p>Machine Learning</p>
+      </div>
+      <div class="skill">
+        <img src="images/skills/mysql.png" alt="MySQL" />
+        <p>MySQL</p>
+      </div>
+      <div class="skill">
+        <img src="images/skills/excel.png" alt="Excel" />
+        <p>Excel</p>
+      </div>
+      <div class="skill">
+        <img src="images/skills/tableau.png" alt="Tableau" />
+        <p>Tableau</p>
+      </div>
+      <div class="skill">
+        <img src="images/skills/powerbi.png" alt="Power BI" />
+        <p>Power BI</p>
       </div>
     </div>
   </section>
-
-  <!-- Contact -->
-  <section class="contact" id="contact">
-    <h3 class="section-title" data-aos="fade-down">Contact Me</h3>
-    <form action="https://formspree.io/f/movwlblw" method="POST" data-aos="fade-up">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message →</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2025 Amala Bera. Built with ❤️ using HTML, CSS, JS</p>
-  </footer>
-
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
 
 </body>
 </html>
