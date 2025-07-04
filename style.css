@@ -101,30 +101,59 @@ section h2 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-top: 1rem;
+  margin-top: 2rem;
 }
 
-.timeline-item h3 {
-  color: #00ffea;
-  font-size: 1.3rem;
+.timeline-item {
+  background: #1c1c1c;
+  border-left: 4px solid #00f7ff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.1);
 }
 
-.timeline-item span {
-  font-size: 0.95rem;
+.company-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #fff;
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 247, 255, 0.4);
+}
+
+.timeline-content h3 {
+  color: #00f7ff;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.timeline-content span {
   color: #ccc;
-  margin-bottom: 0.5rem;
-  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  display: inline-block;
 }
 
-.timeline-item ul {
-  list-style: disc;
+.timeline-content ul {
   padding-left: 1.2rem;
-  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
-.timeline-item ul li {
-  margin-bottom: 0.5rem;
-  font-size: 0.95rem;
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .timeline-content ul {
+    text-align: left;
+  }
 }
 
 /* Skills Section */
