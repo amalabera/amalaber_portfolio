@@ -28,7 +28,7 @@ a:hover {
 .hero {
   height: auto;
   padding: 3rem 1rem 2rem;
-  background: radial-gradient(circle at top left, #1e3c72, #2a5298);
+  background: transparent;
   text-align: center;
   position: relative;
 }
