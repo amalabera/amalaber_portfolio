@@ -107,17 +107,32 @@ header {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 25px;
+  gap: 20px;
   justify-items: center;
   text-align: center;
+  padding: 10px;
 }
+
+.skill {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 14px;
+  width: 120px;
+  transition: transform 0.3s;
+}
+.skill:hover {
+  transform: scale(1.05);
+}
+
 .skill img {
   width: 60px;
   height: 60px;
+  object-fit: contain;
   margin-bottom: 10px;
 }
 .skill p {
   font-size: 0.85rem;
+  color: #d5ff4d;
 }
 
 form {
