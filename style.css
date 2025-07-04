@@ -1,66 +1,94 @@
-/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #111;
-    color: white;
+  background-color: #0d0d0d;
+  color: white;
 }
-
-section {
-    padding: 4rem 2rem;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #111;
 }
-
-/* Skills Section Styling */
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+}
+.nav-links a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+}
+.hero-text h1 { font-size: 40px; }
+.hero-text h2 { font-size: 50px; color: #fff; }
+.hero-text h3 { font-size: 24px; margin-bottom: 20px; color: #ccc; }
+.btn {
+  padding: 10px 20px;
+  background: #EEFF00;
+  border-radius: 8px;
+  color: #000;
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-outline {
+  padding: 10px 20px;
+  border: 2px solid #EEFF00;
+  color: #EEFF00;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
 #skills {
-    background-color: black;
+  padding: 60px 20px;
+  text-align: center;
 }
-
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
 }
-
-h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
-
-/* Grid Styling */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 1.5rem;
+.skill-box {
+  width: 140px;
+  height: 140px;
+  background: #1a1a1a;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-/* Skill Card Styling */
-.flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
+.skill-box img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
-
-.flex:hover {
-    transform: scale(1.1);
+.skill-box p {
+  color: #EEFF00;
+  font-weight: bold;
+  font-size: 14px;
 }
-
-img {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-}
-
-p {
-    margin-top: 0.5rem;
-    font-size: 1rem;
-}
-
-/* Hover effects */
-.flex:hover img {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  background-color: #111;
 }
