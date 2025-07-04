@@ -76,49 +76,47 @@ h2.section-title {
 /* === Experience Section === */
 /* Image size fix for Experience and Skills */
 .experience-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .experience-card {
-  display: flex;
-  background: #f0f0f0;
-  border-radius: 20px;
+  background: #1e1e1e;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 255, 224, 0.15);
   transition: transform 0.3s ease;
-  max-width: 100%;
 }
 
 .experience-card:hover {
-  transform: scale(1.01);
+  transform: translateY(-8px);
 }
 
 .experience-card img {
-  width: 320px;
-  height: auto;
+  width: 100%;
+  height: 200px;
   object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .experience-content {
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 15px;
+  color: #fff;
 }
 
 .experience-content h3 {
-  margin: 0;
-  font-size: 1.5rem;
-  color: #333;
+  margin-top: 0;
+  font-size: 1.25rem;
+  color: #00ffe0;
 }
 
 .experience-content p {
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  color: #555;
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-top: 10px;
 }
 
 /* === Projects Section === */
