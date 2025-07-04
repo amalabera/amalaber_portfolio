@@ -169,6 +169,39 @@ section h2 {
   box-shadow: 0 0 15px rgba(0, 247, 255, 0.2);
   transition: transform 0.3s ease;
 }
+.project-card {
+  position: relative;
+  background: #1c1c1c;
+  border-radius: 16px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+}
+
+/* NEW: Tech Tags for Projects */
+.tech-tags {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 4px 12px;
+  background: #00f7ff;
+  color: #000;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+}
+
 
 .project-card:hover {
   transform: translateY(-8px);
