@@ -26,13 +26,13 @@ a:hover {
 
 /* Hero Section */
 .hero {
-  height: 100vh;
+  height: 80vh; /* Reduced height */
+  padding: 1.5rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   background: radial-gradient(circle at top left, #1e3c72, #2a5298);
-  padding: 2rem;
   position: relative;
 }
 
