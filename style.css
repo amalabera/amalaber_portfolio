@@ -210,9 +210,13 @@ section h2 {
 
 .project-card img {
   width: 100%;
+  height: 180px;
+  object-fit: cover; /* Or use 'contain' for logos */
   border-radius: 12px;
   margin-bottom: 1rem;
+  background-color: #111; /* fallback in case image has whitespace */
 }
+
 
 .project-card h3 {
   font-size: 1.3rem;
