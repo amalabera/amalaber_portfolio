@@ -41,6 +41,18 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
+/* Hero Profile Picture */
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #00f7ff;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 20px rgba(0, 247, 255, 0.6);
+  object-fit: cover;
+}
+
+
 .hero-content .highlight {
   color: #00f7ff;
   text-shadow: 0 0 10px #00f7ff;
