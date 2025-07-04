@@ -295,11 +295,16 @@ footer {
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2rem;
+     margin-bottom: 0.3rem;
   }
 
   .hero-content p {
     font-size: 1rem;
+    margin-bottom: 1rem;
   }
+  .hero {
+  background: linear-gradient(135deg, #142536, #1c3045);
+}
 
   .project-card h3 {
     font-size: 1.1rem;
