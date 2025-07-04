@@ -2,127 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Amala Bera | Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link rel="icon" href="images/profile.png"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <header>
-    <img src="images/profile.png" alt="Amala Bera" class="profile-pic"/>
-    <h1>Hello 👋 I'm <span class="highlight">Amala Bera</span></h1>
-    <p class="title">Business Data Analyst | Python | AI Projects</p>
-    <div class="social-icons">
-      <a href="https://github.com/amalabera" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/amalabera" target="_blank">LinkedIn</a>
-    </div>
+    <img src="images/amala-profile.png" alt="Amala Bera">
+    <h1>Hello<br>I'm Amala Bera</h1>
+    <p>Business Data Analyst</p>
+    <nav>
+      <a href="#experience">My Experience</a>
+      <a href="#projects">My Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section id="experience" data-aos="fade-up">
-    <h2 class="section-title">Experience</h2>
+  <section id="experience">
+    <h2 class="section-title">My Experience</h2>
     <div class="experience-grid">
-
       <div class="experience-card">
-        <img src="images/experience/accenture.png" alt="Accenture">
+        <img src="images/experience/qa.png" alt="Quality Analyst">
         <div class="experience-content">
-          <h3>Quality Analyst – Accenture</h3>
-          <p>Conducted audits and IT quality assessments. Prepared compliance documentation and ensured high product standards.</p>
+          <h3>Quality Analyst</h3>
+          <p>Accenture (Mar 2021 – Dec 2023)</p>
+          <p>Conducted audits and QA testing to enable app QA, reducing release cycle times and improving quality.</p>
         </div>
       </div>
-
       <div class="experience-card">
-        <img src="images/experience/businessanalyst.png" alt="Business Data Analyst">
+        <img src="images/experience/ba.png" alt="Business Analyst">
         <div class="experience-content">
-          <h3>Business Data Analyst</h3>
-          <p>Designed dashboards using SQL & Python. Automated reports and presented strategic insights to stakeholders.</p>
+          <h3>Business Analyst</h3>
+          <p>Accenture (Nov 2021 – Dec 2023)</p>
+          <p>Analyzed KPIs using SQL, Excel, Tableau, and collaborated on dashboards to deliver business insights.</p>
         </div>
       </div>
-
       <div class="experience-card">
-        <img src="images/experience/googleads.png" alt="Google Ads Analyst">
+        <img src="images/experience/digital.png" alt="Digital Analyst">
         <div class="experience-content">
-          <h3>Digital Marketing Analyst – Google Ads</h3>
-          <p>Managed ad campaigns, optimized conversions, and performed detailed performance analysis across platforms.</p>
+          <h3>Digital Marketing Analyst</h3>
+          <p>Google Ads (Mar 2020 – 2021)</p>
+          <p>Managed ad campaigns and optimized content strategies for data-driven measurable engagement.</p>
         </div>
       </div>
-
     </div>
   </section>
 
-  <section id="projects" data-aos="fade-up">
+  <section id="projects">
     <h2 class="section-title">My Projects</h2>
     <div class="project-grid">
-
       <div class="project-card">
-        <img src="images/projects/student-marks.png" alt="Student Marks Predictor"/>
+        <img src="images/projects/student-marks.png" alt="Student Marks Predictor">
         <div class="project-content">
           <h3>Student Marks Predictor</h3>
-          <p>Regression model to predict academic performance using attendance and study time.</p>
+          <p>Built a regression model to predict academic performance based on attendance, study time, and previous grades.</p>
           <div class="project-links">
             <a href="https://marks-predictor.streamlit.app" target="_blank">Live</a>
-            <a href="https://github.com/amalabera/student-marks-predictor" target="_blank">GitHub</a>
+            <a href="https://github.com/amalabera/student-marks-predictor" target="_blank">Code</a>
           </div>
         </div>
       </div>
-
       <div class="project-card">
-        <img src="images/projects/kpi-dashboard.png" alt="KPI Dashboard"/>
+        <img src="images/projects/kpi-dashboard.png" alt="Executive KPI Dashboard">
         <div class="project-content">
           <h3>Executive KPI Dashboard</h3>
-          <p>Interactive dashboard using MySQL & Tableau to visualize business KPIs.</p>
+          <p>Built a dashboard using MySQL and Tableau to visualize KPIs, automate performance reports, and track trends.</p>
           <div class="project-links">
             <a href="#" target="_blank">Live</a>
-            <a href="#" target="_blank">GitHub</a>
+            <a href="https://github.com/amalabera/kpi-dashboard" target="_blank">Code</a>
           </div>
         </div>
       </div>
-
-      <div class="project-card">
-        <img src="images/projects/foodieblog.png" alt="Foodie Blog"/>
-        <div class="project-content">
-          <h3>AmalaFood Blog</h3>
-          <p>Static responsive blog for food lovers, built with HTML, CSS & JavaScript.</p>
-          <div class="project-links">
-            <a href="#" target="_blank">Live</a>
-            <a href="#" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <section id="skills" data-aos="fade-up">
+  <section id="skills">
     <h2 class="section-title">My Skills</h2>
     <div class="skills-grid">
       <div class="skill-card"><img src="images/skills/python.png" alt="Python"><p>Python</p></div>
       <div class="skill-card"><img src="images/skills/mysql.png" alt="MySQL"><p>MySQL</p></div>
       <div class="skill-card"><img src="images/skills/tableau.png" alt="Tableau"><p>Tableau</p></div>
-      <div class="skill-card"><img src="images/skills/excel.png" alt="Excel"><p>Excel</p></div>
+      <div class="skill-card"><img src="images/skills/ml.png" alt="ML"><p>Machine Learning</p></div>
       <div class="skill-card"><img src="images/skills/powerbi.png" alt="Power BI"><p>Power BI</p></div>
+      <div class="skill-card"><img src="images/skills/excel.png" alt="Excel"><p>Excel</p></div>
       <div class="skill-card"><img src="images/skills/pandas.png" alt="Pandas"><p>Pandas</p></div>
       <div class="skill-card"><img src="images/skills/numpy.png" alt="NumPy"><p>NumPy</p></div>
-      <div class="skill-card"><img src="images/skills/ml.png" alt="ML"><p>Machine Learning</p></div>
+      <div class="skill-card"><img src="images/skills/matplotlib.png" alt="Matplotlib"><p>Matplotlib</p></div>
     </div>
   </section>
 
-  <section id="contact" data-aos="fade-up">
+  <section id="contact">
     <h2 class="section-title">Contact Me</h2>
     <form action="https://formspree.io/f/movwlblw" method="POST" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 Amala Bera — Built with ❤️ using HTML, CSS & AOS</p>
+    <p>&copy; 2025 Amala Bera | Built with HTML & CSS</p>
   </footer>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>AOS.init();</script>
 </body>
 </html>
