@@ -1,94 +1,51 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-body {
-  background-color: #0d0d0d;
-  color: white;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  background-color: #111;
-}
-.logo {
-  font-size: 28px;
-  font-weight: bold;
-}
-.nav-links a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-}
-#home {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vh;
-  text-align: center;
-}
-.hero-text h1 { font-size: 40px; }
-.hero-text h2 { font-size: 50px; color: #fff; }
-.hero-text h3 { font-size: 24px; margin-bottom: 20px; color: #ccc; }
-.btn {
-  padding: 10px 20px;
-  background: #EEFF00;
-  border-radius: 8px;
-  color: #000;
-  margin-right: 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.btn-outline {
-  padding: 10px 20px;
-  border: 2px solid #EEFF00;
-  color: #EEFF00;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-}
-#skills {
-  padding: 60px 20px;
-  text-align: center;
-}
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-.skill-box {
-  width: 140px;
-  height: 140px;
-  background: #1a1a1a;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.skill-box img {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-.skill-box p {
-  color: #EEFF00;
-  font-weight: bold;
-  font-size: 14px;
-}
-footer {
-  padding: 20px;
-  text-align: center;
-  color: #666;
-  background-color: #111;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amala | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="logo">Amala<span style="color:#EEFF00;">V</span></div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="hero-text">
+      <h1>Hello</h1>
+      <h2>I'm Amala Bera</h2>
+      <h3>Business Data Analyst</h3>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn">Say Hi →</a>
+        <a href="resume.pdf" class="btn-outline" download>Resume ↓</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-box"><img src="images/skills/python.png" alt="Python"><p>Python</p></div>
+      <div class="skill-box"><img src="images/skills/mysql.png" alt="MySQL"><p>MySQL</p></div>
+      <div class="skill-box"><img src="images/skills/tableau.png" alt="Tableau"><p>Tableau</p></div>
+      <div class="skill-box"><img src="images/skills/ml.png" alt="Machine Learning"><p>ML</p></div>
+      <div class="skill-box"><img src="images/skills/pandas.png" alt="Pandas"><p>Pandas</p></div>
+      <div class="skill-box"><img src="images/skills/numpy.png" alt="NumPy"><p>NumPy</p></div>
+      <div class="skill-box"><img src="images/skills/powerbi.png" alt="Power BI"><p>Power BI</p></div>
+      <div class="skill-box"><img src="images/skills/excel.png" alt="Excel"><p>Excel</p></div>
+      <div class="skill-box"><img src="images/skills/matplotlib.png" alt="Matplotlib"><p>Matplotlib</p></div>
+    </div>
+  </section>
+
+  <footer><p>© 2025 Amala Bera – Built with HTML & CSS</p></footer>
+</body>
+</html>
