@@ -1,51 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amala | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Skills Section -->
+    <section id="skills" class="bg-black text-white py-16 px-6">
+        <h2 class="text-3xl font-bold text-center mb-10">My Skills</h2>
+        <div class="space-y-12">
+            <!-- Skill Categories -->
+            <div>
+                <h3 class="text-xl font-semibold mb-4">🧠 Programming & Libraries</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg">
+                        <img src="/icons/python.jpg" alt="Python" class="w-16 h-16 rounded-full">
+                        <p>Python</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg">
+                        <img src="/icons/numpy.png" alt="NumPy" class="w-16 h-16 rounded-full">
+                        <p>NumPy</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg">
+                        <img src="/icons/sklearn.png" alt="Scikit-Learn" class="w-16 h-16 rounded-full">
+                        <p>Scikit-Learn</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg">
+                        <img src="/icons/seaborn.png" alt="Seaborn" class="w-16 h-16 rounded-full">
+                        <p>Seaborn</p>
+                    </div>
+                </div>
+            </div>
 
-  <header>
-    <div class="logo">Amala<span style="color:#EEFF00;">V</span></div>
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">📊 Data Visualization</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg">
+                        <img src="/icons/tableau.jpg" alt="Tableau" class="w-16 h-16 rounded-full">
+                        <p>Tableau</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg">
+                        <img src="/icons/powerbi.png" alt="Power BI" class="w-16 h-16 rounded-full">
+                        <p>Power BI</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg">
+                        <img src="/icons/excel.png" alt="Excel" class="w-16 h-16 rounded-full">
+                        <p>Excel</p>
+                    </div>
+                </div>
+            </div>
 
-  <section id="home">
-    <div class="hero-text">
-      <h1>Hello</h1>
-      <h2>I'm Amala Bera</h2>
-      <h3>Business Data Analyst</h3>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn">Say Hi →</a>
-        <a href="resume.pdf" class="btn-outline" download>Resume ↓</a>
-      </div>
-    </div>
-  </section>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">📐 Statistical & ML</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg">
+                        <img src="/icons/matplotlib.png" alt="Statistical Programming" class="w-16 h-16 rounded-full">
+                        <p>Statistical Programming</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg">
+                        <img src="/icons/ml.jpg" alt="Machine Learning" class="w-16 h-16 rounded-full">
+                        <p>Machine Learning</p>
+                    </div>
+                </div>
+            </div>
 
-  <section id="skills">
-    <h2 class="section-title">My Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-box"><img src="images/skills/python.png" alt="Python"><p>Python</p></div>
-      <div class="skill-box"><img src="images/skills/mysql.png" alt="MySQL"><p>MySQL</p></div>
-      <div class="skill-box"><img src="images/skills/tableau.png" alt="Tableau"><p>Tableau</p></div>
-      <div class="skill-box"><img src="images/skills/ml.png" alt="Machine Learning"><p>ML</p></div>
-      <div class="skill-box"><img src="images/skills/pandas.png" alt="Pandas"><p>Pandas</p></div>
-      <div class="skill-box"><img src="images/skills/numpy.png" alt="NumPy"><p>NumPy</p></div>
-      <div class="skill-box"><img src="images/skills/powerbi.png" alt="Power BI"><p>Power BI</p></div>
-      <div class="skill-box"><img src="images/skills/excel.png" alt="Excel"><p>Excel</p></div>
-      <div class="skill-box"><img src="images/skills/matplotlib.png" alt="Matplotlib"><p>Matplotlib</p></div>
-    </div>
-  </section>
-
-  <footer><p>© 2025 Amala Bera – Built with HTML & CSS</p></footer>
+            <div>
+                <h3 class="text-xl font-semibold mb-4">🗃️ Databases & Tools</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg">
+                        <img src="/icons/sql.png" alt="MySQL" class="w-16 h-16 rounded-full">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="flex flex-col items-center space-y-2 hover:scale-110 transition-transform duration-300 hover:drop-shadow-lg">
+                        <img src="/icons/git.png" alt="Git / GitHub" class="w-16 h-16 rounded-full">
+                        <p>Git / GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
