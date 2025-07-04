@@ -1,66 +1,46 @@
-/* General styling */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #111;
+#skills {
+  background: #111;
+  padding: 4rem 2rem;
   color: white;
 }
 
-section {
-  padding: 4rem 2rem;
-}
-
-/* Skills Section Styling */
-#skills {
-  background-color: black;
-}
-
-h2 {
+#skills h2 {
   text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
-h3 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+#skills h3 {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
 }
 
-/* Grid Styling */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 1.5rem;
 }
 
-/* Skill Card Styling */
 .flex {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   transition: transform 0.3s ease;
 }
 
 .flex:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
-img {
-  width: 4rem;
-  height: 4rem;
+.flex img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
   border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
 }
 
-p {
+.flex p {
   margin-top: 0.5rem;
   font-size: 1rem;
-}
-
-/* Hover effects */
-.flex:hover img {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
