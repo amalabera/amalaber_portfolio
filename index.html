@@ -1,119 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amala Bera Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link
-      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amala Bera | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/amala.png" type="image/png" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <img src="images/amala.png" alt="Amala Bera">
+    <h1>Hello<br>I'm Amala Bera</h1>
+    <p>Business Data Analyst</p>
+    <div class="nav-links">
+      <a href="#experience">My Experience</a>
+      <a href="#projects">My Projects</a>
+      <a href="#skills">My Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
 
-  <body>
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <img src="images/amala-hero.png" alt="Amala Bera" class="hero-img" />
-        <div class="hero-text">
-          <h1>Hello<br />I'm <span>Amala Bera</span></h1>
-          <h2>Business Data Analyst</h2>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn primary">Say Hi 👋</a>
-            <a href="resume.pdf" class="btn secondary" download>Resume ⬇️</a>
-          </div>
-        </div>
+  <section id="experience" class="experience">
+    <h2 class="section-title" data-aos="fade-up">My Experience</h2>
+    <div class="experience-grid">
+      <div class="exp-card" data-aos="fade-up">
+        <img src="images/experience/accenture.png" alt="Accenture">
+        <h3>Quality Analyst</h3>
+        <p>Accenture<br>Jan 2021 – Dec 2023</p>
+        <p>Conducted audits and QA testing on mobile apps, reducing release cycle times and improving quality.</p>
       </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="section">
-      <h2 data-aos="fade-up">My Experience</h2>
-      <div class="cards">
-        <div class="card" data-aos="fade-right">
-          <img src="images/experience/quality-analyst.png" alt="Quality Analyst" />
-          <h3>Quality Analyst – Accenture</h3>
-          <p>Reviewed, audited, and validated software releases for quality and consistency.</p>
-        </div>
-        <div class="card" data-aos="fade-up">
-          <img src="images/experience/data-analyst.png" alt="Data Analyst" />
-          <h3>Business Data Analyst</h3>
-          <p>Created dashboards and extracted insights using SQL, Tableau, and Excel for stakeholders.</p>
-        </div>
-        <div class="card" data-aos="fade-left">
-          <img src="images/experience/google-ads.png" alt="Digital Marketing Analyst" />
-          <h3>Google Ads – Digital Marketing Analyst</h3>
-          <p>Managed ad performance, ROI tracking, and content targeting for international campaigns.</p>
-        </div>
+      <div class="exp-card" data-aos="fade-up">
+        <img src="images/experience/accenture2.png" alt="Business Analyst">
+        <h3>Business Data Analyst</h3>
+        <p>Accenture<br>Nov 2021 – Dec 2023</p>
+        <p>Analyzed KPIs using SQL, Excel, Tableau, and collaborated on dashboards to deliver business insights.</p>
       </div>
-    </section>
+      <div class="exp-card" data-aos="fade-up">
+        <img src="images/experience/googleads.png" alt="Google Ads">
+        <h3>Digital Marketing Analyst</h3>
+        <p>Google Ads<br>2020 – 2021</p>
+        <p>Managed ad campaigns and optimized content strategies to drive measurable engagement.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2 data-aos="fade-up">My Projects</h2>
-      <div class="cards">
-        <div class="card" data-aos="fade-up">
-          <img src="images/projects/student-marks.png" alt="Student Marks Predictor" />
-          <h3>Student Marks Predictor</h3>
-          <p>Regression model predicting marks based on hours studied. Streamlit + Scikit-learn.</p>
-          <a href="https://marks-predictor.streamlit.app" target="_blank">Live</a> |
+  <section id="projects" class="projects">
+    <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card" data-aos="zoom-in">
+        <img src="images/projects/student-marks.png" alt="Student Marks Predictor">
+        <h3>Student Marks Predictor</h3>
+        <p>Built a regression model to predict academic performance using attendance and grades.</p>
+        <div class="btns">
+          <a href="https://marks-predictor.streamlit.app" target="_blank">Live</a>
           <a href="https://github.com/amalabera/student-marks-predictor" target="_blank">GitHub</a>
         </div>
-        <div class="card" data-aos="fade-up">
-          <img src="images/projects/kpi-dashboard.png" alt="KPI Dashboard" />
-          <h3>Executive KPI Dashboard</h3>
-          <p>Interactive dashboard using MySQL and Excel to automate KPI reporting in Streamlit.</p>
-          <a href="https://kpi-dashboard.streamlit.app" target="_blank">Live</a> |
+      </div>
+      <div class="project-card" data-aos="zoom-in">
+        <img src="images/projects/kpi-dashboard.png" alt="Executive KPI Dashboard">
+        <h3>Executive KPI Dashboard</h3>
+        <p>Interactive Streamlit dashboard using MySQL + Excel to automate key metric visualizations.</p>
+        <div class="btns">
+          <a href="#">Live</a>
           <a href="https://github.com/amalabera/kpi-dashboard" target="_blank">GitHub</a>
         </div>
       </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-      <h2 data-aos="fade-up">My Skills</h2>
-      <div class="skills-grid">
-        <img src="images/skills/python.png" alt="Python" />
-        <img src="images/skills/mysql.png" alt="MySQL" />
-        <img src="images/skills/tableau.png" alt="Tableau" />
-        <img src="images/skills/ml.png" alt="ML" />
-        <img src="images/skills/powerbi.png" alt="Power BI" />
-        <img src="images/skills/excel.png" alt="Excel" />
-        <img src="images/skills/matplotlib.png" alt="Matplotlib" />
-        <img src="images/skills/pandas.png" alt="Pandas" />
-        <img src="images/skills/numpy.png" alt="NumPy" />
+      <div class="project-card" data-aos="zoom-in">
+        <img src="images/projects/foodie-blog.png" alt="Foodie Blog Website">
+        <h3>AmalaFoodBlog</h3>
+        <p>Designed a responsive food blogging website with rich UI, animations, and image gallery.</p>
+        <div class="btns">
+          <a href="https://amalafoodblog.ccbp.tech" target="_blank">Live</a>
+          <a href="https://github.com/amalabera/foodie-blog" target="_blank">GitHub</a>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2 data-aos="fade-up">Contact Me</h2>
-      <form
-        action="https://formspree.io/f/movwlblw"
-        method="POST"
-        data-aos="fade-up"
-      >
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="_replyto" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn primary">Send</button>
-      </form>
-    </section>
+  <section class="skills" id="skills">
+    <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><img src="images/skills/python.png" alt="Python"><p>Python</p></div>
+      <div class="skill-card"><img src="images/skills/mysql.png" alt="MySQL"><p>MySQL</p></div>
+      <div class="skill-card"><img src="images/skills/powerbi.png" alt="Power BI"><p>Power BI</p></div>
+      <div class="skill-card"><img src="images/skills/excel.png" alt="Excel"><p>Excel</p></div>
+      <div class="skill-card"><img src="images/skills/tableau.png" alt="Tableau"><p>Tableau</p></div>
+      <div class="skill-card"><img src="images/skills/pandas.png" alt="Pandas"><p>Pandas</p></div>
+      <div class="skill-card"><img src="images/skills/numpy.png" alt="NumPy"><p>NumPy</p></div>
+      <div class="skill-card"><img src="images/skills/matplotlib.png" alt="Matplotlib"><p>Matplotlib</p></div>
+      <div class="skill-card"><img src="images/skills/ml.png" alt="Machine Learning"><p>Machine Learning</p></div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>© 2025 Amala Bera | Built with 💚 using HTML + CSS</p>
-    </footer>
+  <section id="contact" class="contact">
+    <h2 class="section-title" data-aos="fade-up">Contact Me</h2>
+    <form action="https://formspree.io/f/movwlblw" method="POST" class="contact-form" data-aos="fade-up">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
-    <script>
-      AOS.init();
-    </script>
-  </body>
+  <footer>
+    <p>&copy; 2025 Amala Bera | Built with 💻 HTML & CSS</p>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>
-<!-- index.html will be added here -->
