@@ -144,6 +144,15 @@ padding: 10px 20px;
   font-size: 0.95rem;
   line-height: 1.6;
 }
+.timeline-content ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
 
 @media (max-width: 768px) {
   .timeline-item {
