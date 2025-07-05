@@ -108,7 +108,7 @@ section h2 {
   background: #1c1c1c;
   border-left: 4px solid #00f7ff;
   border-radius: 10px;
-  padding: 12px 16px;
+padding: 10px 20px;
 
   display: flex;
   align-items: flex-start;
